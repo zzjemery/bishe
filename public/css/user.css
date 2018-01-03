@@ -1,0 +1,57 @@
+.dis-none {
+  display: none;
+}
+.dis-block {
+  display: block;
+}
+.surerepay {
+  display: inline-block;
+  width: 80px;
+  height: 30px;
+  background-color: #5ED2F3;
+  border-radius: 5px;
+  cursor: pointer;
+  line-height: 30px;
+  text-align: center;
+}
+.main-left {
+  text-align: center;
+}
+.main-left .panel a {
+  text-decoration: none;
+  display: block;
+  width: 100%;
+}
+.main-left .act {
+  border: 1px solid #5ED2F3;
+  color: #5ED2F3;
+}
+.allmessage {
+  font-size: 16px;
+  line-height: 36px;
+}
+.footer {
+  overflow: hidden;
+  background-color: #212121;
+  text-align: center;
+  padding-bottom: 10px;
+}
+.footer .footer_main {
+  font-size: 12px;
+  color: #777777;
+}
+.footer .footer_main a {
+  color: #777;
+}
+.footer .footer_main a:hover {
+  text-decoration: none;
+}
+.footer .footer_main p {
+  line-height: 50px;
+}
+.footer .footer_main .first span {
+  margin: 5px;
+}
+.footer .footer_main .first a {
+  color: #fff;
+}

@@ -1,0 +1,199 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    |     
+    meta(name="viewport", content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no")
+    |     
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    |     
+    link(rel="stylesheet", href="/bootstrap-3.3.7-dist/css/bootstrap.min.css")
+    |     
+    link(rel="stylesheet", href="/css/reg.css")
+    |     
+    title 注册
+    |     
+    style.
+      .vi-visible {
+      visibility: visible;
+      }
+      .vi-hidden {
+      visibility: hidden;
+      }
+  body
+    nav.navbar.navbar-default.navbar-fixed-top(style="border:none;")
+      .container
+        // Brand and toggle get grouped for better mobile display
+        .navbar-header
+          button.navbar-toggle.collapsed(type="button", data-toggle="collapse", data-target="#bs-example-navbar-collapse-1", aria-expanded="false")
+            span.sr-only Toggle navigation
+            |                         
+            span.icon-bar
+            |                         
+            span.icon-bar
+            |                         
+            span.icon-bar
+          |                 
+          a.navbar-brand(href="#", style="padding:0;")
+            img(src="/images/logo.png", alt="", style="height:50px;width:100px")
+        // Collect the nav links, forms, and other content for toggling
+        #bs-example-navbar-collapse-1.collapse.navbar-collapse
+          ul.nav.navbar-nav.navbar-right
+            li
+              a(href="/index")
+                span.glyphicon.glyphicon-home
+                |   首页
+            |                     
+            li.active
+              a(href="/reg")
+                span.glyphicon.glyphicon-th-list
+                |   注册
+            |                     
+            li
+              a(href="/login")
+                span.glyphicon.glyphicon-fire
+                |   登录
+            |                     
+            li
+              a(href="/about")
+                span.glyphicon.glyphicon-question-sign
+                |  关于我们
+       // /.navbar-collapse
+      // /.container-fluid
+    |     
+    .container-fluid.banner
+      .container.banner-main
+        .login-top
+          .login-h
+            .lf 欢迎注册
+            |                     
+            .rt
+              | 已有账号？
+              a(href="rest/page/login") 立即登录
+          |                 
+          form(action="")
+            .inputd.phone
+              i
+              |                         
+              input#mobile.inputs(name="mobile", type="text", placeholder="输入您的手机号码")
+              |                         
+              .vi-hidden
+                .tishi
+                  p#mobile-ts 请输入正确的注册手机号
+            |                     
+            .inputd.password
+              i
+              |                         
+              input#passwd.inputs(name="passwd", type="password", placeholder="密码为6-12位数字字母组合")
+              |                         
+              .vi-hidden
+                .tishi
+                  p#passwd-ts 请输入注册密码
+            |                     
+            .inputd.real
+              i
+              |                         
+              input#realName.inputs(name="realName", type="text", placeholder="请输入您的真实姓名")
+              |                         
+              .vi-hidden
+                .tishi
+                  p#realName-ts 请输入真实姓名
+            |                     
+            .inputd.cardid
+              i
+              |                         
+              input#idCardNo.inputs(name="idCardNo", type="text", placeholder="请输入您的身份证号码")
+              |                         
+              .vi-hidden
+                .tishi
+                  p#idCardNo-ts 请输入18位身份证号
+                  // 18位身份证号
+            |                     
+            .inputd
+              input#messageNumber.inputs.width-168px.fl(type="text", name="messageNumber", placeholder="请输入验证码")
+              |                         
+              p#text_pwd_txt.btn_none 验证码
+            |                     
+            .longin-text.regist-text
+              .lf(style="margin-top:10px;font-size:12px;")
+                i#selected.lf.selected
+                span.lf
+                  | 我已阅读并同意九课分期
+                  a(href="rest/page/agreement") 《使用协议》
+                  | 及
+                  a(href="rest/page/privacy") 《隐私条款》
+                  |  
+                  br
+                  | 请先阅读并同意协议
+            |                     
+            .login-btn
+              a#rbut(href="javascript:void(0)") 立即注册
+    |     
+    .container-fluid.footer
+      .footer_main
+        p.first
+          a(target="_blank", href="javascript:;", rel="nofollow") 投资者关系
+          |  
+          span.ff |
+          |  
+          a(target="_blank", href="javascript:;", rel="nofollow") 关于杰米
+          |  
+          span |
+          |  
+          a(target="_blank", href="javascript:;", rel="nofollow") 运营许可
+          |  
+          span |
+          |                 
+          a(target="_blank", href="javascript:;", rel="nofollow") 内容合作
+          |  
+          span |
+          |  
+          a(target="_blank", href="javascript:;", rel="nofollow") 联系我们
+          |  
+          span |
+          |  
+          a(target="_blank", href="javascript:;", rel="nofollow") 友情链接
+          |  
+          span |
+          |                 
+          a(target="_blank", href="javascript:;", rel="nofollow") 网友意见箱
+          |  
+          span |
+          |                 
+          a(target="_blank", href="javascript:;", rel="nofollow") 招聘英才
+          |  
+          span.ff |
+          |  
+          a(target="_blank", href="javascript:;", rel="nofollow") 用户体验计划
+        |             
+        p.c333
+          | 不良信息举报电话：(0571)88933333 
+          a.smarterwiki-linkify(href="javascript:;") 举报邮箱：jubao@myhexin.com
+          |  增值电信业务经营许可证：B2-20079907
+        |             
+        p.c333
+          | CopyrightHithink RoyalFlush Information Network Co.,Ltd. All rights reserved. 浙江核新同花顺网络信息股份有限公司版权所有
+        |             
+        p.c333
+          | ICP证： 
+          a(href="javascript:;", target="_blank") 浙ICP备09003598号
+          |  证券投资咨询服务提供：浙江杰米贷有限公司 （中国证监会核发证书编号：ZX8520）
+        |             
+        div(style="width:300px;margin:0 auto; padding:20px 0;")
+          div(style="float:left;padding:10px")
+            a(style="text-decoration:none;height:20px;line-height:20px;", href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33011002011820", target="_blank")
+              img(style="float:left;", src="http://i.thsi.cn/images/beian2016.png", alt="")
+              |                         
+              p(style="float:left;height:20px;line-height:20px;margin: 0px 0px 0px 5px; color:#939393;") 浙公网安备 33011002011820号
+          |                 
+          div(style="float:left")
+            a(target="_blank", href="http://idinfo.zjaic.gov.cn/bscx.do?method=hddoc&id=33000000008706")
+              img(src="http://idinfo.zjaic.gov.cn/images/i_lo2.gif", style="float:right", alt="", width="40px", height="40px", border="0")
+    |     
+    script(src="/js/jquery-3.2.1.js")
+    |     
+    script(src="/bootstrap-3.3.7-dist/js/bootstrap.min.js")
+    |  
+    script(src="/js/zhengze.js")   
+    script(src="/js/reg.js")
+    
